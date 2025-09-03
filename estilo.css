@@ -1,159 +1,149 @@
 body {
-    background-color: blueviolet;
+    background-color: rgb(179, 79, 209);
 }
-.parrafo{
-    color: azure;
-    background-color: brown;
+
+.parrafo {
+    color: rgb(19, 25, 44);
+    background-color: #fced1f;
 }
-#parrafoUnico{
-    color: aqua;
-    background-color: black;
+
+.titulo {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-size: 5em; 
 }
-#lo{
-    color:navy;
-    background-color:gold;
+
+.titulo:hover {
+    font-weight: 700;
+    color: #e4e012;
+    cursor: pointer;
 }
-#lol {
-    width: 40vw;
-    height: 20vh;
-    background-color: black;
+
+#contenedor1 {
+    width: 50vw;
+    height: 80vh;
     border: 1px solid black;
-    margin: 10px;
+    position: relative;
 }
-#no {
-    width: 40vw;
-    height: 20vh;
-    border: 1px solid black;
-    margin: 10px;
+
+#contenedor2 {
+    width: 50vw;
+    height: 80vh;
+    border: 1px solid black; 
+    margin: 100px;
     display: flex;
     flex-direction: column;
     align-content: space-around;
     flex-wrap: wrap;
     align-items: flex-end;
 }
-.cuadrado {
-    width: 45vw;
-    height: 80vh;
-    background-color: blue;
-    border: 1px solid black;
-    margin: 1px;
+
+.diamante {
+    width: 25%;
+    height: 25%;
+    border: 1px solid rgb(202, 119, 119);
+    position: absolute;
+    background-color: rgb(48, 180, 48);
 }
 
-.diamante{
-    width:25%; 
-    height:25%;
-    border: 1px solid black; 
-    position: absolute;
-    background-color: rgb(127, 153, 255);
-}
+#cuadro1 { top: 11%; left: 11%; }
+#cuadro2 { top: 22%; left: 22%; }
+#cuadro3 { top: 33%; left: 33%; }
 
 .figura {
     width: 25%;
     height: 25%;
-    border: 1px solid black; 
-    background-color: 89900Ff;
+    border: 1px solid black;
+    background-color: #ece91f;
 }
 
 #tituloDibujo {
-text-align: center;
+    text-align: center;
 }
 
-#lienzo {
-width: 700px;
-height: 600px;
-background-image: url("https://i.pinimg.com/1200x/e2/8b/36/e28b36a75df2f847640740c422350728.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-border: 1px solid black;
-margin: 0 auto;
-position: relative;
+#lienzo1 {
+    width: 700px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
 }
 
-.circulo {
-    width: 300px; /* ancho */
-    height: 300px; /* alto */
-    background-color: rgb(211, 35, 35); /* color de fondo */
-    border-radius: 50%; /* redondea los bordes de la figura*/
-    border: 3px solid black; /* borde de la figura: grosor, estilo, color */
-    position: absolute; /* ubicar los elementos en una posición fija que definimos a continuación */
-    top: 270px; /* posición desde el borde superior del lienzo */
-    left: 255px; /* posición desde el borde izquierdo del lienzo */
-}
-#circulo2 {
-    width: 50px; /* ancho */
-    height: 50px; /* alto */
-    background-color: rgb(5, 4, 4); /* color de fondo */
-    top: 500px; /* posición desde el borde superior del lienzo */
-    left: 420px; /* posición desde el borde izquierdo del lienzo */
-}
-#circulo3 {
-    width: 50px; /* ancho */
-    height: 50px; /* alto */
-    background-color: rgb(5, 4, 4); /* color de fondo */
-    top: 300px; /* posición desde el borde superior del lienzo */
-    left: 400px; /* posición desde el borde izquierdo del lienzo */
-}
-#circulo4 {
-    width: 50px; /* ancho */
-    height: 50px; /* alto */
-    background-color: rgb(5, 4, 4); /* color de fondo */
-    top: 400px; /* posición desde el borde superior del lienzo */
-    left: 490px; /* posición desde el borde izquierdo del lienzo */
-}
-#koko {
-    width: 50px; /* ancho */
-    height: 50px; /* alto */
-    background-color: rgb(5, 4, 4); /* color de fondo */
-    top: 400px; /* posición desde el borde superior del lienzo */
-    left: 275px; /* posición desde el borde izquierdo del lienzo */
-}
-#ose {
-    width: 130px; /* ancho */
-    height: 100px; /* alto */
-    background-color: rgb(5, 4, 4); /* color de fondo */
-    top: 228px; /* posición desde el borde superior del lienzo */
-    left: 210px; /* posición desde el borde izquierdo del lienzo */
-    transform: rotate(-45deg)
+/* cuerpo rojo */
+.cuerpo {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 50%;
+  border: 3px solid black;
+  position: absolute;
+  top: 40%;
+  left: 40%;
 }
 
-.cuadrado {
-    width: 1px;
-    height: 1px;
-    background-color: rgb(255, 251, 213);
-    position: absolute;
-    top: 500px;
-    left: 10px;
+/* cabeza negra */
+.cabeza {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 45%;
 }
- 
-/* línea hecha con border*/
-.lineaHorizontal {
+
+/* línea divisoria */
+.linea {
+  width: 3px;
+  height: 150px;
+  background-color: black;
+  position: absolute;
+  top: 40%;
+  left: 47.5%;
+}
+
+/* puntos */
+.punto {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.punto1 { top: 45%; left: 42%; }
+.punto2 { top: 55%; left: 44%; }
+.punto3 { top: 50%; left: 50%; }
+.punto4 { top: 60%; left: 52%; }
+
+/* animación extra */
+@keyframes redondear {
+    0% {
+        border-radius: 0%;
+        background-color: #9900ff;
+    }
+    50% {
+        border-radius: 25%;
+        background-color: #4400ff;
+    }
+    100% {
+        border-radius: 50%;
+        background-color: black;
+    }
+}
+
+.cuadrado5 {
     width: 100px;
-    height: 0px;
-    border: 3px solid rgb(14, 7, 7); /* borde de la figura: grosor, estilo, color */
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid black;
     position: absolute;
-    top: 300px;
-    left: 140px;
-    transform: rotate(-25deg)
 }
-/* línea hecha con border*/
-.lineaHorizontal1 {
-    width: 100px;
-    height: 0px;
-    border: 3px solid rgb(14, 7, 7); /* borde de la figura: grosor, estilo, color */
-    position: absolute;
-    top: 200px;
-    left: 250px;
-    transform: rotate(115deg)
-}
-/* línea hecha con border*/
-.lineaVertical {
-    width: 0px;
-    height: 280px;
-    border: 3px solid rgb(19, 9, 9); /* borde de la figura: grosor, estilo, color */
-    position: absolute;
-    top: 280px;
-    left: 400px;
-    transform: rotate(-45deg);
+
+.cuadrado5:hover {
+    animation: redondear 2s linear infinite alternate;
 }
 
 

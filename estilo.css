@@ -1,3 +1,16 @@
+.titulo {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-size: 5em; 
+    top: 40%;
+    left: 50%;
+}
+
+.titulo:hover {
+    font-weight: 700;
+    color: #e4e012;
+    cursor: pointer;
+}
 body {
     background-color: rgb(179, 79, 209);
 }
@@ -7,17 +20,6 @@ body {
     background-color: #fced1f;
 }
 
-.titulo {
-    font-family: "Caprasimo", serif;
-    font-weight: 400;
-    font-size: 5em; 
-}
-
-.titulo:hover {
-    font-weight: 700;
-    color: #e4e012;
-    cursor: pointer;
-}
 
 #contenedor1 {
     width: 50vw;
